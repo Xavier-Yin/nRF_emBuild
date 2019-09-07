@@ -1,7 +1,7 @@
 From ubuntu:18.04
 
 RUN apt-get -qq update && \
-    apt-get install -y --no-install-recommends wget libx11-6 libfreetype6 libxrender1 libfontconfig1 libxext6 python-pip && \
+    apt-get install -y --no-install-recommends wget libx11-6 libfreetype6 libxrender1 libfontconfig1 libxext6 python-pip git && \
     mkdir -p /_tmp /nordic && \
     cd /_tmp && \
     wget --no-check-certificate -qO SES https://www.segger.com/downloads/embedded-studio/EmbeddedStudio_ARM_Linux_x64 && \
